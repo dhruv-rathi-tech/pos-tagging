@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+*.egg-info/
+.Python
+env/
+venv/
+.venv/
+*.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# NLTK data
+nltk_data/
+
+# Model + vocab artifacts
+*.keras
+*.h5
+word_id.joblib
+tag_id.joblib
+max_len.joblib
+*.joblib
+
+# Gensim downloaded embeddings
+gensim-data/
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Streamlit
+.streamlit/secrets.toml
