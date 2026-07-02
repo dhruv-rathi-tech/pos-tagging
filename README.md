@@ -3,7 +3,7 @@
 A deep learning project that tags each word in a sentence with its part of speech (noun, verb, adjective, etc.) using a Bidirectional LSTM trained on the Penn Treebank corpus. Three pretrained embedding types — **Word2Vec**, **GloVe**, and **FastText** — are trained and compared, and the best-performing model is served through an interactive Streamlit app.
 
 ## Demo
-
+https://pos-tagging-dhruv.streamlit.app/
 
 ## Project Structure
 
