@@ -15,14 +15,6 @@ venv/
 # NLTK data
 nltk_data/
 
-# Model + vocab artifacts
-*.keras
-*.h5
-word_id.joblib
-tag_id.joblib
-max_len.joblib
-*.joblib
-
 # Gensim downloaded embeddings
 gensim-data/
 

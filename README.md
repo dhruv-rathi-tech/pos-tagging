@@ -64,19 +64,18 @@ Then open the local URL Streamlit prints (usually `http://localhost:8501`).
 
 ## Note on Model Files
 
-Trained `.keras` model files and `.joblib` vocabulary files are **excluded from this repository** via `.gitignore` because:
-- GitHub blocks files over 100 MB, and Word2Vec/GloVe/FastText-based models plus embeddings can easily exceed this.
-- They are fully reproducible by running `pos_tagging.py`.
+Trained .keras model and .joblib vocabulary files (~19 MB total) are small enough to commit directly to this repo, and are included so the deployed app works out of the box without any extra setup. GitHub's hard limit is 100 MB per file, so this comfortably fits.
 
-If you want to distribute the trained model itself, consider [Git LFS](https://git-lfs.github.com/) or hosting the model on [Hugging Face Hub](https://huggingface.co/) / Google Drive and downloading it in `app.py` on first run.
+If you retrain the models and file sizes grow significantly (e.g. if you add GloVe/FastText model files too), consider Git LFS for anything approaching that limit.
+
 
 ## Results
 
 | Embedding | Accuracy | Precision | Recall | F1 Score |
 |-----------|----------|-----------|--------|----------|
-| Word2Vec  | *see console output after training* | | | |
-| GloVe     | | | | |
-| FastText  | | | | |
+| Word2Vec  | 0.977969 | 0.948820 | 0.949411 | 0.948859 |
+| GloVe     | 0.969072 | 0.928729 | 0.928980 | 0.928185 |
+| FastText  | 0.978225 | 0.948641 | 0.949998 | 0.948424 |
 
 
 ## Tech Stack
